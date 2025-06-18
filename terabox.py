@@ -45,29 +45,29 @@ options = {
 
 aria2.set_global_options(options)
 
-API_ID = os.environ.get('TELEGRAM_API', '29206201')
+API_ID = os.environ.get('TELEGRAM_API', '')
 if len(API_ID) == 0:
     logging.error("TELEGRAM_API variable is missing! Exiting now")
     exit(1)
 
-API_HASH = os.environ.get('TELEGRAM_HASH', '4bdf7253def590da9be769770ec00a10')
+API_HASH = os.environ.get('TELEGRAM_HASH', '')
 if len(API_HASH) == 0:
     logging.error("TELEGRAM_HASH variable is missing! Exiting now")
     exit(1)
     
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '7591240537:AAFu0FfmvveUV7lJ-UHikeJ6lHjgHZtdURQ')
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '')
 if len(BOT_TOKEN) == 0:
     logging.error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
 
-DUMP_CHAT_ID = os.environ.get('DUMP_CHAT_ID', '-1002643772982')
+DUMP_CHAT_ID = os.environ.get('DUMP_CHAT_ID', '')
 if len(DUMP_CHAT_ID) == 0:
     logging.error("DUMP_CHAT_ID variable is missing! Exiting now")
     exit(1)
 else:
     DUMP_CHAT_ID = int(DUMP_CHAT_ID)
 
-FSUB_ID = os.environ.get('FSUB_ID', '-1002737128911')
+FSUB_ID = os.environ.get('FSUB_ID', '')
 if len(FSUB_ID) == 0:
     logging.error("FSUB_ID variable is missing! Exiting now")
     exit(1)
