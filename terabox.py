@@ -45,29 +45,29 @@ options = {
 
 aria2.set_global_options(options)
 
-API_ID = os.environ.get('TELEGRAM_API', '')
+API_ID = os.environ.get('TELEGRAM_API', '29206201')
 if len(API_ID) == 0:
     logging.error("TELEGRAM_API variable is missing! Exiting now")
     exit(1)
 
-API_HASH = os.environ.get('TELEGRAM_HASH', '')
+API_HASH = os.environ.get('TELEGRAM_HASH', '4bdf7253def590da9be769770ec00a10')
 if len(API_HASH) == 0:
     logging.error("TELEGRAM_HASH variable is missing! Exiting now")
     exit(1)
     
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '')
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '7591240537:AAFu0FfmvveUV7lJ-UHikeJ6lHjgHZtdURQ')
 if len(BOT_TOKEN) == 0:
     logging.error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
 
-DUMP_CHAT_ID = os.environ.get('DUMP_CHAT_ID', '')
+DUMP_CHAT_ID = os.environ.get('DUMP_CHAT_ID', '-1002643772982')
 if len(DUMP_CHAT_ID) == 0:
     logging.error("DUMP_CHAT_ID variable is missing! Exiting now")
     exit(1)
 else:
     DUMP_CHAT_ID = int(DUMP_CHAT_ID)
 
-FSUB_ID = os.environ.get('FSUB_ID', '')
+FSUB_ID = os.environ.get('FSUB_ID', '-1002737128911')
 if len(FSUB_ID) == 0:
     logging.error("FSUB_ID variable is missing! Exiting now")
     exit(1)
@@ -122,9 +122,9 @@ def format_size(size):
 
 @app.on_message(filters.command("start"))
 async def start_command(client: Client, message: Message):
-    join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/jetmirror")
-    developer_button = InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚡️", url="https://t.me/rtx5069")
-    repo69 = InlineKeyboardButton("ʀᴇᴘᴏ 🌐", url="https://github.com/Hrishi2861/Terabox-Downloader-Bot")
+    join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/MOTUMOVIES")
+    developer_button = InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ ⚡️", url="https://t.me/WRROHIT02")
+    repo69 = InlineKeyboardButton("ʀᴇᴘᴏ 🌐", url="https://t.me/WRROHIT02")
     user_mention = message.from_user.mention
     reply_markup = InlineKeyboardMarkup([[join_button, developer_button], [repo69]])
     final_msg = f"ᴡᴇʟᴄᴏᴍᴇ, {user_mention}.\n\n🌟 ɪ ᴀᴍ ᴀ ᴛᴇʀᴀʙᴏx ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ. sᴇɴᴅ ᴍᴇ ᴀɴʏ ᴛᴇʀᴀʙᴏx ʟɪɴᴋ ɪ ᴡɪʟʟ ᴅᴏᴡɴʟᴏᴀᴅ ᴡɪᴛʜɪɴ ғᴇᴡ sᴇᴄᴏɴᴅs ᴀɴᴅ sᴇɴᴅ ɪᴛ ᴛᴏ ʏᴏᴜ ✨."
@@ -156,7 +156,7 @@ async def handle_message(client: Client, message: Message):
     is_member = await is_user_member(client, user_id)
 
     if not is_member:
-        join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/jetmirror")
+        join_button = InlineKeyboardButton("ᴊᴏɪɴ ❤️🚀", url="https://t.me/MOTUMOVIES")
         reply_markup = InlineKeyboardMarkup([[join_button]])
         await message.reply_text("ʏᴏᴜ ᴍᴜsᴛ ᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜsᴇ ᴍᴇ.", reply_markup=reply_markup)
         return
@@ -210,7 +210,7 @@ async def handle_message(client: Client, message: Message):
         f"✨ {download.name}\n"
         f"👤 ʟᴇᴇᴄʜᴇᴅ ʙʏ : <a href='tg://user?id={user_id}'>{message.from_user.first_name}</a>\n"
         f"📥 ᴜsᴇʀ ʟɪɴᴋ: tg://user?id={user_id}\n\n"
-        "[ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴊᴇᴛ-ᴍɪʀʀᴏʀ ❤️🚀](https://t.me/JetMirror)"
+        "[ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴊᴇᴛ-ᴍɪʀʀᴏʀ ❤️🚀](https://t.me/WRROHIT02)"
     )
 
     last_update_time = time.time()
